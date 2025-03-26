@@ -11,7 +11,7 @@ body {
 .home {
   height: 100vh;
   width: 100vw;
-  background-image: url("/background-1.jpg");
+  background-image: url("background-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,19 +121,19 @@ body {
   border-radius: 50%;
 }
 .social .facebook {
-  background-image: url("/icons/facebook.png");
+  background-image: url("icons/facebook.png");
   background-size: cover;
 }
 .social .linkedin {
-  background-image: url("/icons/linkedin.png");
+  background-image: url("icons/linkedin.png");
   background-size: cover;
 }
 .social .github {
-  background-image: url("/icons/github-logo.png");
+  background-image: url("icons/github-logo.png");
   background-size: cover;
 }
 .social .instagram {
-  background-image: url("/icons/instagram.png");
+  background-image: url("icons/instagram.png");
   background-size: cover;
 }
 .download {
@@ -225,55 +225,55 @@ body {
   background-size: cover;
 }
 .html {
-  background-image: url("/icons/icons8-html-5-48.png");
+  background-image: url("icons/icons8-html-5-48.png");
 }
 .css {
-  background-image: url("/icons/icons8-css-48.png");
+  background-image: url("icons/icons8-css-48.png");
 }
 .javascript {
-  background-image: url("/icons/icons8-javascript-48.png");
+  background-image: url("icons/icons8-javascript-48.png");
 }
 .php {
-  background-image: url("/icons/icons8-php-48.png");
+  background-image: url("icons/icons8-php-48.png");
 }
 .python {
-  background-image: url("/icons/icons8-python-48.png");
+  background-image: url("icons/icons8-python-48.png");
 }
 .java {
-  background-image: url("/icons/java.png");
+  background-image: url("icons/java.png");
 }
 .c {
-  background-image: url("/icons/c-.png");
+  background-image: url("icons/c-.png");
 }
 .react {
-  background-image: url("/icons/physics.png");
+  background-image: url("icons/physics.png");
 }
 .express {
-  background-image: url("/icons/icons8-express-js-50.png");
+  background-image: url("icons/icons8-express-js-50.png");
 }
 .node {
-  background-image: url("/icons/icons8-nodejs-48.png");
+  background-image: url("icons/icons8-nodejs-48.png");
 }
 .mongodb {
-  background-image: url("/icons/icons8-mongodb-48.png");
+  background-image: url("icons/icons8-mongodb-48.png");
 }
 .laravel {
-  background-image: url("/icons/icons8-laravel-64.png");
+  background-image: url("icons/icons8-laravel-64.png");
 }
 .sql {
-  background-image: url("/icons/icons8-sql-48.png");
+  background-image: url("icons/icons8-sql-48.png");
 }
 .firebase {
-  background-image: url("/icons/icons8-firebase-48.png");
+  background-image: url("icons/icons8-firebase-48.png");
 }
 .git {
-  background-image: url("/icons/icons8-git-48.png");
+  background-image: url("icons/icons8-git-48.png");
 }
 .ubuntu {
-  background-image: url("/icons/icons8-ubuntu-48.png");
+  background-image: url("icons/icons8-ubuntu-48.png");
 }
 .vscode {
-  background-image: url("/icons/icons8-vs-code-48.png");
+  background-image: url("icons/icons8-vs-code-48.png");
 }
 
 @media (max-width: 768px) {
