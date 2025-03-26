@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0%;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/background-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.click-about {
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.nav-bar {
+  height: 5vh;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 50%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.home-content {
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+}
+.intro {
+  width: 50vw;
+}
+.profile {
+  width: 50vw;
+}
+.profile-picture {
+  margin-top: 15%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+.profile-picture:hover {
+  box-shadow: 0px 0px 50px rgba(252, 250, 250, 0.945);
+  transition: 1s;
+}
+.greeting {
+  margin-top: 25%;
+  margin-left: 15%;
+  text-align: left;
+}
+.name {
+  margin-bottom: 0%;
+  color: white;
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace;
+}
+.name:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.hello {
+  color: transparent;
+  font-size: 50px;
+  -webkit-text-stroke: 1px white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hello:hover {
+  color: white;
+}
+.introduction {
+  margin-top: 0%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.about {
+  overflow: hidden;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-left {
+  width: 50vw;
+  height: 100%;
+}
+.about-right {
+  width: 50vw;
+  height: 100%;
+}
+.about-left-content {
+  margin-left: 15%;
+}
+.sub-head {
+  color: #111184;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.passage {
+  color: #111184;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.social {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+.social .icon {
+  margin-left: 2%;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.social .facebook {
+  background-image: url("/icons/facebook.png");
+  background-size: cover;
+}
+.social .linkedin {
+  background-image: url("/icons/linkedin.png");
+  background-size: cover;
+}
+.social .github {
+  background-image: url("/icons/github-logo.png");
+  background-size: cover;
+}
+.social .instagram {
+  background-image: url("/icons/instagram.png");
+  background-size: cover;
+}
+.download {
+  background: linear-gradient(90deg, #111184, #4a49e6);
+  border: 1px solid #111184;
+  height: 100%;
+
+  color: white;
+  padding: 2% 10% 2% 10%;
+  border-radius: 25px / 50%;
+}
+.download:hover {
+  cursor: pointer;
+  background: white;
+  color: #111184;
+  transition: 1s;
+}
+.info {
+  margin-top: 10%;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.row:nth-child(odd) {
+  color: white;
+  background: #111184;
+  border-radius: 10px;
+}
+.row:nth-child(even) {
+  color: #111184;
+  border-radius: 10px;
+}
+
+.label {
+  width: 50%;
+}
+.value {
+  width: 50%;
+}
+.details {
+  color: #111184;
+  height: 25%;
+  width: 90%;
+  text-align: justify;
+
+  margin-top: 5%;
+}
+.skills {
+  height: 60%;
+  margin: 5% 5% 0 0;
+  border: 3px solid #111184;
+  border-radius: 10px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8%;
+  height: 100%;
+}
+
+.html,
+.css,
+.javascript,
+.php,
+.python,
+.java,
+.c,
+.react,
+.express,
+.node,
+.mongodb,
+.laravel,
+.sql,
+.firebase,
+.git,
+.ubuntu,
+.vscode {
+  height: 48px;
+  width: 48px;
+  background-size: cover;
+}
+.html {
+  background-image: url("/icons/icons8-html-5-48.png");
+}
+.css {
+  background-image: url("/icons/icons8-css-48.png");
+}
+.javascript {
+  background-image: url("/icons/icons8-javascript-48.png");
+}
+.php {
+  background-image: url("/icons/icons8-php-48.png");
+}
+.python {
+  background-image: url("/icons/icons8-python-48.png");
+}
+.java {
+  background-image: url("/icons/java.png");
+}
+.c {
+  background-image: url("/icons/c-.png");
+}
+.react {
+  background-image: url("/icons/physics.png");
+}
+.express {
+  background-image: url("/icons/icons8-express-js-50.png");
+}
+.node {
+  background-image: url("/icons/icons8-nodejs-48.png");
+}
+.mongodb {
+  background-image: url("/icons/icons8-mongodb-48.png");
+}
+.laravel {
+  background-image: url("/icons/icons8-laravel-64.png");
+}
+.sql {
+  background-image: url("/icons/icons8-sql-48.png");
+}
+.firebase {
+  background-image: url("/icons/icons8-firebase-48.png");
+}
+.git {
+  background-image: url("/icons/icons8-git-48.png");
+}
+.ubuntu {
+  background-image: url("/icons/icons8-ubuntu-48.png");
+}
+.vscode {
+  background-image: url("/icons/icons8-vs-code-48.png");
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+  .intro {
+    width: 100vw;
+  }
+  .profile {
+    width: 100vw;
+    margin-left: 0%;
+    order: -1;
+  }
+  .profile-picture {
+    margin-left: 5%;
+    margin-top: 5%;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 0%;
+  }
+  .greeting {
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  .hello {
+    font-size: 50px;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .name {
+    font-size: 60px;
+    margin-top: 0%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .hello span {
+    display: block;
+  }
+  .introduction {
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .about {
+    flex-direction: column;
+    height: auto;
+  }
+  .about-left {
+    width: 100vw;
+  }
+  .about-left-content {
+    margin-left: 5%;
+  }
+  .social {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .social .download {
+    flex-basis: 100%;
+    margin-right: 25%;
+    text-align: center;
+    justify-content: center;
+  }
+  .label {
+    width: 35%;
+  }
+  .value {
+    width: 65%;
+  }
+
+  .about-right {
+    margin: 5%;
+    width: 100vw;
+  }
+  .info {
+    margin-top: 25%;
+  }
+  .skills {
+    margin-right: 5%;
+    height: auto;
+    width: 90%;
+  }
+  .download:hover {
+    cursor: pointer;
+    background: #111184;
+    color: white;
+    transition: 1s;
+  }
+  .download:active {
+    background: white;
+    color: #111184;
+  }
+}
