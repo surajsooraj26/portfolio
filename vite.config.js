@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/portfolio/", // Set the base path for deployment
+
   // server: {
   //   host: "0.0.0.0", // allow external access
   //   port: 5173, // your Vite port
