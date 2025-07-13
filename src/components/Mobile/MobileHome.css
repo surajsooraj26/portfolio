@@ -1,0 +1,94 @@
+.mobile-home {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.mobile-home .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.mobile-home .profile img {
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mobile-home .profile h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.mobile-home .profile p {
+  font-size: 1.2rem;
+  color: #9badc0;
+
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.mobile-home .intro {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.mobile-home .intro p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.mobile-home .projects {
+  margin-top: 2rem;
+}
+.mobile-home .projects .img {
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.mobile-home .projects img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  border-radius: 10px;
+}
+.mobile-home .projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.mobile-home .projects-list .details {
+  flex: 2;
+}
+.mobile-home .projects-list .details .description {
+  color: #9badc0;
+  margin-top: 0.5rem;
+}
+.mobile-home .projects-list .img {
+  flex: 1;
+  height: 100%;
+  width: 100;
+  border-radius: 10px;
+}
+.mobile-home .skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem; /* spacing between components */
+}
+.mobile-home .skills li {
+  background-color: #282c34;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid #61dafb;
+}
+
+.mobile-home .contact_form input,
+.mobile-home .contact_form textarea {
+  width: 100%;
+}

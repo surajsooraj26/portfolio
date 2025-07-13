@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "project1.png",
+    "title": "Library Attendance System",
+    "description": "The Library Attendance System is a MERN-based web app for easy tracking of student and faculty library visits. Users can check in and out with a unique ID or barcode for quick, hassle-free access."
+  },
+  {
+    "id": 2,
+    "image": "project2.png",
+    "title": "Library Management System",
+    "description": "A full-stack Library Management System built using the MERN stack. This system allows an admin to register users, manage books, and track activity."
+  },
+  {
+    "id": 3,
+    "image": "project3.png",
+    "title": "Split Search Algorithm",
+    "description": "A divide-and-conquer method for finding elements in unsorted arrays. The project features a Python implementation and an HTML visualization to demonstrate its process."
+  }
+]

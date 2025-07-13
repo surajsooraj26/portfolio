@@ -1,0 +1,26 @@
+.mobile-navbar {
+  background-color: #282c34;
+  display: flex;
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mobile-navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}

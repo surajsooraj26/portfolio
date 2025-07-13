@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Noto Sans";
+  margin: 0;
+  overflow-x: hidden; /* hides unwanted horizontal scroll */
+}
