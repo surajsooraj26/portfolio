@@ -21,7 +21,11 @@ function MobileHome() {
       <div className="projects">
         <h2>Projects</h2>
         {projectdata.map((projectData, index) => (
-          <div key={index} className="projects-list">
+          <div
+            key={index}
+            className="projects-list"
+            onClick={() => window.open(projectData.link, "_blank")}
+          >
             <div className="details">
               <p className="title">{projectData.title}</p>
               <p className="description">{projectData.description}</p>

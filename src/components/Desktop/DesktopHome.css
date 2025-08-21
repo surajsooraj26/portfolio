@@ -52,6 +52,7 @@
 }
 .project {
   flex: 1;
+  cursor: pointer;
 }
 .project img {
   width: 100%;

@@ -1,0 +1,50 @@
+.educations {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 40px; /* space for line */
+}
+
+.educations::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* adjust to align with icons */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc; /* vertical line color */
+}
+
+.education {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.edu1 {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -30px; /* aligns circle with vertical line */
+}
+
+.edu1 svg {
+  font-size: 14px;
+  color: #4a90e2;
+}
+
+.edu2 {
+  margin-left: 20px;
+}
+
+.year {
+  font-size: 0.9rem;
+  color: gray;
+}

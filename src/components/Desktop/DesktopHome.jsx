@@ -20,7 +20,11 @@ function DesktopHome() {
         <h2>Projects</h2>
         <div className="project_list">
           {projectdata.slice(0, 3).map((project, index) => (
-            <div className="project" key={index}>
+            <div
+              className="project"
+              key={index}
+              onClick={() => window.open(project.link, "_blank")}
+            >
               <img src={project.image} loading="lazy" alt={project.title} />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
