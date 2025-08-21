@@ -9,7 +9,7 @@ function Navbar() {
         <div className="links">
           <ul className="navbar__links">
             <li>
-              <a href="/about">About</a>
+              <a href="/portfolio/about">About</a>
             </li>
             <li>
               <a href="/projects">Projects</a>
