@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      (function () {
+        // Repo name (must match your GitHub repo name)
+        var repo = "/portfolio";
+
+        // Current path + query + hash
+        var fullPath =
+          window.location.pathname +
+          window.location.search +
+          window.location.hash;
+
+        // Remove the repo prefix from pathname
+        var relativePath = fullPath.replace(repo, "");
+
+        // Redirect to index.html, but encode the original path in the hash
+        window.location.replace(repo + "/index.html#" + relativePath);
+      })();
+    </script>
   </head>
   <body>
     <p>Redirecting...</p>
