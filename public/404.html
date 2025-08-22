@@ -5,21 +5,16 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
       (function () {
-        // Your repo name
         var repo = "/portfolio";
+        var fullPath =
+          window.location.pathname.replace(repo, "") +
+          window.location.search +
+          window.location.hash;
 
-        // Preserve path + query + hash
-        var newURL =
-          window.location.origin +
-          repo +
-          "/index.html?redirect=" +
-          encodeURIComponent(
-            window.location.pathname.replace(repo, "") +
-              window.location.search +
-              window.location.hash
-          );
-
-        window.location.replace(newURL);
+        // Redirect with relative path only
+        window.location.replace(
+          repo + "/index.html?redirect=" + encodeURIComponent(fullPath)
+        );
       })();
     </script>
   </head>
