@@ -1,4 +1,5 @@
-import { FaBook } from "react-icons/fa";
+import { IoBookOutline } from "react-icons/io5";
+
 import "./DesktopAbout.css";
 function DesktopAbout() {
   return (
@@ -16,37 +17,49 @@ function DesktopAbout() {
         <div className="educations">
           <div className="education">
             <div className="edu1">
-              <FaBook />
+              <div className="icon">
+                <IoBookOutline />
+              </div>
+              <div className="icon2">
+                <div className="edu1l">&nbsp;</div>
+                <div className="edu1r">&nbsp;</div>
+              </div>
             </div>
             <div className="edu2">
-              <p>Masters in Computer Science, University of Kerala</p>
-              <p className="year">2023 - 2025</p>
+              <p>Masters in Computer Science at University of Kerala</p>
+              <p className="year">2023-2025</p>
             </div>
           </div>
-
           <div className="education">
             <div className="edu1">
-              <FaBook />
+              <div className="icon">
+                <IoBookOutline />
+              </div>
+              <div className="icon2">
+                <div className="edu1l">&nbsp;</div>
+                <div className="edu1r">&nbsp;</div>
+              </div>
             </div>
             <div className="edu2">
               <p>
-                Bachelors in Computer Science, Sree Ayyappa College
+                Bachelors in Computer Science at Sree Ayyappa College,
                 Eramallikkara
               </p>
-              <p className="year">2020 - 2023</p>
+              <p className="year">2020-2023</p>
             </div>
           </div>
-
           <div className="education">
             <div className="edu1">
-              <FaBook />
+              <div className="icon">
+                <IoBookOutline />
+              </div>
             </div>
             <div className="edu2">
               <p>
-                Computer Operator and Programming Assistant, Govt. ITI
+                Computer Operator and Programming Assistant at Govt. ITI
                 Chandhanathope
               </p>
-              <p className="year">2018 - 2019</p>
+              <p className="year">2018-2019</p>
             </div>
           </div>
         </div>
