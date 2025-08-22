@@ -64,6 +64,34 @@ function DesktopAbout() {
           </div>
         </div>
       </div>
+      <div className="skills section_3">
+        <h3>Skills</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>PHP</li>
+          <li>Git</li>
+          <li>React</li>
+          <li>CSS</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div className="interest">
+        <h3>Interests</h3>
+        <p>
+          Outside of coding, I enjoy exploring new technologies, contributing to
+          open-source projects, and keeping up with the latest industry trends.
+          I’m also an avid reader who finds inspiration in books.{" "}
+        </p>
+        <p>
+          In addition to my technical interests, I actively participate in
+          library activities, where I contribute as an engaged member by helping
+          organize and arrange resources effectively. I take pride in my ability
+          to plan and structure programs, especially when it comes to arranging
+          and managing events or tasks in an orderly way.
+        </p>
+      </div>
     </div>
   );
 }

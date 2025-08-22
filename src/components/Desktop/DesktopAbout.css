@@ -32,3 +32,9 @@
   font-size: 0.9rem;
   margin-top: 5px;
 }
+.section_3 {
+  margin: 0;
+}
+.section_3 li {
+  font-size: small;
+}
