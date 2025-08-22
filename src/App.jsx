@@ -10,7 +10,7 @@ function App() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       {isMobile ? <MobileNavbar /> : <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
