@@ -10,8 +10,8 @@ function DesktopHome() {
         <div className="intro">
           <h1>Hi, I'm Suraj, a Web Developer</h1>
           <p>
-            I'm a web developer with a focus on creating innovative and
-            efficient solutions. Explore my portfolio to see my work and skills.
+            I'm a web developer with a on creating innovative and efficient
+            solutions. Explore my portfolio to see my work and skills.
           </p>
           <button className="contact_button">View Projects</button>
         </div>
