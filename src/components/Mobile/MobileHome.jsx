@@ -14,7 +14,7 @@ function MobileHome() {
         </p>
       </div>
       <div className="profile">
-        <img src="IMG_3113(2).jpg" loading="lazy" alt="Profile" />
+        <img src="profile.jpg" loading="lazy" alt="Profile" />
         <h1>Suraj S</h1>
         <p>Web Developer</p>
       </div>

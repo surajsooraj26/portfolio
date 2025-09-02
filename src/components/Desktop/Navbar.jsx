@@ -26,7 +26,7 @@ function Navbar() {
         <div className="left_section">
           <button className="resume_button">Resume</button>
           <div className="profile">
-            <img src="profile.jpeg" loading="lazy" alt="Profile" />
+            <img src="profile.jpg" loading="lazy" alt="Profile" />
           </div>
         </div>
       </div>

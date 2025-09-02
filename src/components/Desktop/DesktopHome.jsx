@@ -5,7 +5,7 @@ function DesktopHome() {
     <div className="home">
       <div className="section_1">
         <div className="profile">
-          <img src="IMG_3113.JPG" loading="lazy" alt="Profile" />
+          <img src="profile.jpg" loading="lazy" alt="Profile" />
         </div>
         <div className="intro">
           <h1>Hi, I'm Suraj, a Web Developer</h1>
