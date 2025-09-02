@@ -1,6 +1,6 @@
 import "./MobileNavbar.css";
-import { useState } from "react";
 import { useNavbar } from "../../context/NavbarContext";
+import { Link } from "react-router-dom";
 
 function MobileNavbar() {
   const [showNavbar, setShowNavbar] = useNavbar();
@@ -20,10 +20,24 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a href="/portfolio/">Home</a>
+          </li>
+          <li>
+            <Link to="/projects" onClick={() => setShowNavbar(false)}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setShowNavbar(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setShowNavbar(false)}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </>

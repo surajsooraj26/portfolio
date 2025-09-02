@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "image": "project2.png",
+    "image": "project2.jpeg",
     "title": "Library Management System",
     "link": "https://github.com/surajsooraj26/Library_Management_System",
     "description": "A full-stack Library Management System built using the MERN stack. This system allows an admin to register users, manage books, and track activity."
