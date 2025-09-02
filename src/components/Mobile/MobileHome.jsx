@@ -1,8 +1,10 @@
 import "./MobileHome.css";
 import projectdata from "./../../data/project.json";
+import { useNavbar } from "../../context/NavbarContext";
 function MobileHome() {
+  const [showNavbar, setShowNavbar] = useNavbar();
   return (
-    <div className="mobile-home">
+    <div className="mobile-home" onClick={() => setShowNavbar(false)}>
       <div className="intro">
         <h1>Hi, I'm Suraj!</h1>
         <p>

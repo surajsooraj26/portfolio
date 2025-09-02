@@ -5,17 +5,20 @@ import About from "./pages/About";
 import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import MobileNavbar from "./components/Mobile/MobileNavbar";
+import { NavbarProvider } from "./context/NavbarContext";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <Navbar />}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <NavbarProvider>
+        {isMobile ? <MobileNavbar /> : <Navbar />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </NavbarProvider>
     </>
   );
 }

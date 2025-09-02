@@ -24,3 +24,30 @@
   background-color: #ffffff;
   border-radius: 2px;
 }
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  padding: 2rem;
+  transition: right 0.3s ease-in-out;
+}
+
+.slide-in.open {
+  right: 0; /* slide in */
+}
+
+.slide-in ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slide-in li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
