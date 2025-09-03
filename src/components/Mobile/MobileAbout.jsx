@@ -21,19 +21,29 @@ function MobileAbout() {
         <h2>Education</h2>
         <div className="mobile-education">
           <p className="course">Masters in Computer Science</p>
-          <p>University of Kerala</p>
-          <p>2023-2025</p>
+          <p className="institute">University of Kerala</p>
+          <p className="year">2023-2025</p>
         </div>
         <div className="mobile-education">
           <p className="course">Bachelors in Computer Science</p>
-          <p>Sree Ayyappa College, Eramallikkara</p>
-          <p>2020-2023</p>
+          <p className="institute">Sree Ayyappa College, Eramallikkara</p>
+          <p className="year">2020-2023</p>
         </div>
         <div className="mobile-education">
           <p className="course">Computer Operating and Programming Assistant</p>
-          <p>Govt. ITI Chandanathope</p>
-          <p>2018-2019</p>
+          <p className="institute">Govt. ITI Chandanathope</p>
+          <p className="year">2018-2019</p>
         </div>
+      </div>
+      <div className="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+          <li>Php</li>
+          <li>Java</li>
+        </ul>
       </div>
     </div>
   );

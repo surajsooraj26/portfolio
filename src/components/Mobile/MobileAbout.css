@@ -1,5 +1,30 @@
-.mobile-about {
-  padding: 1rem;
-  margin: 0 auto;
-  width: 100%;
+.mobile-education {
+  margin-bottom: 1rem;
+}
+.mobile-educations .mobile-education p {
+  font-size: 1rem;
+  margin: 0;
+}
+.mobile-education .institute,
+.year {
+  color: #9badc0;
+}
+.mobile-education .course {
+  font-size: 1.2rem;
+}
+
+.mobile-about .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+.mobile-about .skills li {
+  background-color: #282c34;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
