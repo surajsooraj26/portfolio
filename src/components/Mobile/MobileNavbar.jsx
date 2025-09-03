@@ -11,7 +11,7 @@ function MobileNavbar() {
         <h1>Portfolio</h1>
         <div
           className="hamburger-menu"
-          onClick={() => setShowNavbar(!showNavbar)}
+          onPointerDown={() => setShowNavbar(!showNavbar)}
         >
           <span className="line"></span>
           <span className="line"></span>
