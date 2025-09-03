@@ -5,7 +5,7 @@ function MobileHome() {
   const [showNavbar, setShowNavbar] = useNavbar();
   return (
     <div className="mobile-home" onClick={() => setShowNavbar(false)}>
-      <div className="intro">
+      <div className="mobile-intro">
         <h1>Hi, I'm Suraj!</h1>
         <p>
           A passionate web developer with a focus on creating innovative and
@@ -15,7 +15,7 @@ function MobileHome() {
           eager to learn and adapt to new challenges.
         </p>
       </div>
-      <div className="profile">
+      <div className="mobile-profile">
         <img src="profile.jpg" loading="lazy" alt="Profile" />
         <h1>Suraj S</h1>
         <p>Web Developer</p>

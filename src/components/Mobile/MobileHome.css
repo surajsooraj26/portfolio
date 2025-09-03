@@ -1,37 +1,38 @@
-.mobile-home {
+.mobile-home,
+.mobile-about {
   padding: 1rem;
   margin: 0 auto;
   max-width: 100%;
 }
-.mobile-home .profile {
+.mobile-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
 }
-.mobile-home .profile img {
+.mobile-profile img {
   width: 40%;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
 }
-.mobile-home .profile h1 {
+.mobile-profile h1 {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
-.mobile-home .profile p {
+.mobile-profile p {
   font-size: 1.2rem;
   color: #9badc0;
 
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
-.mobile-home .intro {
+.mobile-intro {
   margin-top: 1rem;
   font-size: 1rem;
 }
-.mobile-home .intro p {
+.mobile-intro p {
   text-align: justify;
   text-justify: inter-word;
 }

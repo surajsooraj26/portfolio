@@ -46,7 +46,7 @@ button {
   background-color: #21a1f1;
 }
 
-.profile img {
+.left_section .profile img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
