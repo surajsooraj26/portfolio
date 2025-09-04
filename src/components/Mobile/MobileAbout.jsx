@@ -1,7 +1,9 @@
 import "./MobileAbout.css";
+import { useNavbar } from "../../context/NavbarContext";
 function MobileAbout() {
+  const [showNavbar, setShowNavbar] = useNavbar();
   return (
-    <div className="mobile-about">
+    <div className="mobile-about" onPointerDown={() => setShowNavbar(false)}>
       <h1>About</h1>
       <div className="mobile-intro">
         <p>

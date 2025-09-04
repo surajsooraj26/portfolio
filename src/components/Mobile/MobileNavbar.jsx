@@ -20,24 +20,21 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul>
-          <li>
-            <a href="/portfolio/">Home</a>
-          </li>
-          <li>
-            <Link to="/projects" onClick={() => setShowNavbar(false)}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={() => setShowNavbar(false)}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={() => setShowNavbar(false)}>
-              Contact
-            </Link>
-          </li>
+          <Link to="/" onClick={() => setShowNavbar(false)}>
+            <li>Home</li>
+          </Link>
+          <Link to="/about" onClick={() => setShowNavbar(false)}>
+            <li>About</li>
+          </Link>
+          <Link to="/projects" onClick={() => setShowNavbar(false)}>
+            <li>Projects</li>
+          </Link>
+          <Link to="/skills" onClick={() => setShowNavbar(false)}>
+            <li>Skills</li>
+          </Link>
+          <Link to="/contact" onClick={() => setShowNavbar(false)}>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </>
