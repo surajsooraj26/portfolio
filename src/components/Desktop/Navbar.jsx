@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import { FaDownload } from "react-icons/fa";
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -12,19 +14,29 @@ function Navbar() {
               <a href="/portfolio/about">About</a>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <a href="/portfolio/projects">Projects</a>
             </li>
             <li>
-              <a href="/skills">Skills</a>
+              <a href="/portfolio/skills">Skills</a>
             </li>
 
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/portfolio/contact">Contact</a>
             </li>
           </ul>
         </div>
         <div className="left_section">
-          <button className="resume_button">Resume</button>
+          <a
+            href="https://drive.google.com/uc?id=1yPtqyelOE5tK1K9Zg663LX6_UzuUl40y&export=download"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="resume_button">
+              <FaDownload />
+              &nbsp; Resume
+            </button>
+          </a>
+
           <div className="profile">
             <img src="profile.jpg" loading="lazy" alt="Profile" />
           </div>
