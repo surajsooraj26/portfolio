@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import MobileNavbar from "./components/Mobile/MobileNavbar";
 import { NavbarProvider } from "./context/NavbarContext";
-
+import Project from "./pages/Project";
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Project />} />
         </Routes>
       </NavbarProvider>
     </>

@@ -8,7 +8,9 @@ function MobileNavbar() {
   return (
     <>
       <nav className="mobile-navbar">
-        <h1>Portfolio</h1>
+        <a href="/portfolio/">
+          <h1>Portfolio</h1>
+        </a>
         <div
           className="hamburger-menu"
           onClick={() => setShowNavbar(!showNavbar)}
@@ -20,21 +22,21 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul>
-          <Link to="/" onClick={() => setShowNavbar(false)}>
+          <a href="/" onClick={() => setShowNavbar(false)}>
             <li>Home</li>
-          </Link>
-          <Link to="/about" onClick={() => setShowNavbar(false)}>
+          </a>
+          <a href="/portfolio/about" onClick={() => setShowNavbar(false)}>
             <li>About</li>
-          </Link>
-          <Link to="/projects" onClick={() => setShowNavbar(false)}>
+          </a>
+          <a href="/portfolio/projects" onClick={() => setShowNavbar(false)}>
             <li>Projects</li>
-          </Link>
-          <Link to="/skills" onClick={() => setShowNavbar(false)}>
+          </a>
+          <a href="/portfolio/skills" onClick={() => setShowNavbar(false)}>
             <li>Skills</li>
-          </Link>
-          <Link to="/contact" onClick={() => setShowNavbar(false)}>
+          </a>
+          <a href="/portfolio/contact" onClick={() => setShowNavbar(false)}>
             <li>Contact</li>
-          </Link>
+          </a>
         </ul>
       </div>
     </>
