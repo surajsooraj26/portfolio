@@ -27,7 +27,7 @@ function DesktopHome() {
             >
               <img src={project.image} loading="lazy" alt={project.title} />
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <p className="section_2_para">{project.description}</p>
             </div>
           ))}
         </div>

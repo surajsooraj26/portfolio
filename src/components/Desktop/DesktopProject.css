@@ -1,0 +1,25 @@
+.project-list {
+  margin-top: 3rem;
+}
+.project-list .project {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.project-list .project h3 {
+  margin-top: 0;
+}
+.project-list .project img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.view-project-button {
+  background-color: #282c34;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 9999px;
+}
