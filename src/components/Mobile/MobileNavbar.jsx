@@ -22,7 +22,7 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul>
-          <a href="/" onClick={() => setShowNavbar(false)}>
+          <a href="/portfolio/" onClick={() => setShowNavbar(false)}>
             <li>Home</li>
           </a>
           <a href="/portfolio/about" onClick={() => setShowNavbar(false)}>
