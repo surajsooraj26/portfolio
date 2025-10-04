@@ -1,6 +1,41 @@
 import "./DesktopHome.css";
+import { useState } from "react";
 import projectdata from "./../../data/project.json";
+import emailjs from "emailjs-com";
+
 function DesktopHome() {
+  const [formData, setFormData] = useState({ email: "", message: "" });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const sendEmail = (e) => {
+    console.log("reach");
+    e.preventDefault();
+    emailjs
+      .send(
+        "service_d68foc6",
+        "template_ch92v7g",
+        {
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "gaz7InjeZVvwuQpKh"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setStatus("✅ Message sent successfully!");
+          setFormData({ email: "", message: "" });
+        },
+        (error) => {
+          console.log(error.text);
+          setStatus("❌ Failed to send message. Try again.");
+        }
+      );
+  };
+
   return (
     <div className="home">
       <div className="section_1">
@@ -49,11 +84,27 @@ function DesktopHome() {
         <h2>Contact</h2>
         <form action="" className="contact_form">
           <label htmlFor="email">Email</label>
-          <input type="email" placeholder="Your email" required />
+          <input
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            name="email"
+            placeholder="Your email"
+            required
+          />
           <label htmlFor="message">Message</label>
-          <textarea placeholder="Your message" required></textarea>
-          <button type="submit">Send</button>
+          <textarea
+            value={formData.message}
+            onChange={handleChange}
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit" onClick={sendEmail}>
+            Send
+          </button>
         </form>
+        {status && <p className="mt-2">{status}</p>}
       </div>
     </div>
   );
