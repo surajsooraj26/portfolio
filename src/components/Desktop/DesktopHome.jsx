@@ -1,18 +1,27 @@
 import "./DesktopHome.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import projectdata from "./../../data/project.json";
 import emailjs from "emailjs-com";
 
 function DesktopHome() {
   const [formData, setFormData] = useState({ email: "", message: "" });
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(""), 3000);
+      return () => clearTimeout(timer); // cleanup if component unmounts
+    }
+  }, [status]);
   const sendEmail = (e) => {
-    console.log("reach");
     e.preventDefault();
+    setLoading(true);
+    setStatus("");
+
     emailjs
       .send(
         "service_d68foc6",
@@ -25,15 +34,16 @@ function DesktopHome() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setStatus("✅ Message sent successfully!");
           setFormData({ email: "", message: "" });
         },
         (error) => {
-          console.log(error.text);
           setStatus("❌ Failed to send message. Try again.");
         }
-      );
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
@@ -82,7 +92,7 @@ function DesktopHome() {
       </div>
       <div className="contact">
         <h2>Contact</h2>
-        <form action="" className="contact_form">
+        <form onSubmit={sendEmail} className="contact_form">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -100,11 +110,11 @@ function DesktopHome() {
             placeholder="Your message"
             required
           ></textarea>
-          <button type="submit" onClick={sendEmail}>
-            Send
+          <button type="submit" disabled={loading}>
+            {loading ? <div className="spinner"></div> : "Send"}
           </button>
         </form>
-        {status && <p className="mt-2">{status}</p>}
+        {status && <p className="msg">{status}</p>}
       </div>
     </div>
   );
