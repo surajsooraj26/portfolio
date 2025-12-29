@@ -2,6 +2,7 @@ import "./DesktopHome.css";
 import { useState, useEffect } from "react";
 import projectdata from "./../../data/project.json";
 import emailjs from "emailjs-com";
+import { sendEmail } from "../../utils/SendEmail";
 
 function DesktopHome() {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -13,37 +14,19 @@ function DesktopHome() {
   };
   useEffect(() => {
     if (status) {
-      const timer = setTimeout(() => setStatus(""), 3000);
+      const timer = setTimeout(() => setStatus(""), 5000);
       return () => clearTimeout(timer); // cleanup if component unmounts
     }
   }, [status]);
-  const sendEmail = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setStatus("");
-
-    emailjs
-      .send(
-        "service_d68foc6",
-        "template_ch92v7g",
-        {
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "gaz7InjeZVvwuQpKh"
-      )
-      .then(
-        (result) => {
-          setStatus("✅ Message sent successfully!");
-          setFormData({ email: "", message: "" });
-        },
-        (error) => {
-          setStatus("❌ Failed to send message. Try again.");
-        }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+    const result = await sendEmail(formData);
+    setStatus(result.message);
+    setFormData({ email: "", message: "" });
+    setLoading(false);
   };
 
   return (
@@ -92,7 +75,7 @@ function DesktopHome() {
       </div>
       <div className="contact">
         <h2>Contact</h2>
-        <form onSubmit={sendEmail} className="contact_form">
+        <form onSubmit={handleSubmit} className="contact_form">
           <label htmlFor="email">Email</label>
           <input
             type="email"

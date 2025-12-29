@@ -1,4 +1,3 @@
-import "./Home.css";
 import { useMediaQuery } from "react-responsive";
 import DesktopHome from "../components/Desktop/DesktopHome";
 import MobileHome from "../components/Mobile/MobileHome";

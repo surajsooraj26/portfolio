@@ -117,8 +117,40 @@
 }
 
 .msg {
-  transition: opacity 0.5s ease;
+  position: fixed;
+  top: 1rem;
+  left: 80%;
+  width: max-content;
+  transform: translateX(-50%);
+  background-color: #282c34;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  opacity: 0.9;
+  animation-name: notification;
+  animation-duration: 0.8s; /* A quick duration often feels smoother */
+  animation-timing-function: ease-out; /* The key to smoothness */
+  animation-fill-mode: forwards;
 }
+@keyframes notification {
+  0% {
+    left: 120%;
+    /* Start fast, move a long distance quickly */
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  }
+
+  70% {
+    left: 80%;
+    /* Overshoot the final position slightly */
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    left: 85%;
+    /* Settle into the final position gently */
+  }
+}
+
 .spinner {
   width: 14px;
   height: 14px;
