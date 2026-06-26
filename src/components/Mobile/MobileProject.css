@@ -1,0 +1,20 @@
+.mobile-project-list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mobile-project .m-p-title {
+  margin: 0;
+}
+.mobile-project {
+  width: 70%;
+}
+.mobile-project-list .m2 {
+  height: auto;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
