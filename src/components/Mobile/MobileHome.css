@@ -1,6 +1,7 @@
 .mobile-home,
 .mobile-about,
-.mobile-projects {
+.mobile-projects,
+.mobile-skills {
   padding: 1rem;
   margin: 0 auto;
   max-width: 100%;
