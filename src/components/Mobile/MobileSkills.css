@@ -1,0 +1,13 @@
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem; /* spacing between components */
+}
+.skills li {
+  background-color: #282c34;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid #61dafb;
+}
