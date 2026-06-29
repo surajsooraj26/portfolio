@@ -11,3 +11,9 @@
   border-radius: 5px;
   border: 0.5px solid #61dafb;
 }
+ul .list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
