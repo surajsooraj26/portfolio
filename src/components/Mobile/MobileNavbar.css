@@ -47,7 +47,15 @@
 }
 
 .slide-in li {
-  margin: 1rem 0;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-links li {
+  border: 1px solid #61dafb;
+  padding: 1rem;
 }
