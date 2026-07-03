@@ -1,4 +1,4 @@
 function MobileContact() {
-  return <div>Mobile Contact</div>;
+  return <div className="mobile-contact"><h1>Contact</h1> </div>;
 }
 export default MobileContact;

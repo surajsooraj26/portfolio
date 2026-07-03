@@ -1,6 +1,12 @@
 import "./MobileNavbar.css";
 import { useNavbar } from "../../context/NavbarContext";
 import { NavLink, Link } from "react-router-dom";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { RiComputerLine } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
+import { BsCpu } from "react-icons/bs";
+import { HiOutlinePhone } from "react-icons/hi";
+
 
 
 function MobileNavbar() {
@@ -23,13 +29,14 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul className="mobile-nav-links">
-  <li>
+  <li >
     <NavLink
       to="/"
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active nav-link" : "nav-link")}
       onClick={() => setShowNavbar(false)}
       end
     >
+      <BiHomeAlt2 />
       Home
     </NavLink>
   </li>
@@ -37,9 +44,10 @@ function MobileNavbar() {
   <li>
     <NavLink
       to="/about"
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active nav-link" : "nav-link")}
       onClick={() => setShowNavbar(false)}
     >
+      <CgProfile />
       About
     </NavLink>
   </li>
@@ -47,9 +55,10 @@ function MobileNavbar() {
   <li>
     <NavLink
       to="/projects"
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active nav-link" : "nav-link")}
       onClick={() => setShowNavbar(false)}
     >
+      <RiComputerLine />
       Projects
     </NavLink>
   </li>
@@ -57,9 +66,10 @@ function MobileNavbar() {
   <li>
     <NavLink
       to="/skills"
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active nav-link" : "nav-link")}
       onClick={() => setShowNavbar(false)}
     >
+      <BsCpu />
       Skills
     </NavLink>
   </li>
@@ -67,9 +77,10 @@ function MobileNavbar() {
   <li>
     <NavLink
       to="/contact"
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active nav-link" : "nav-link")}
       onClick={() => setShowNavbar(false)}
     >
+      <HiOutlinePhone />
       Contact
     </NavLink>
   </li>

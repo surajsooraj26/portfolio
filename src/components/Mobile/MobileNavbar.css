@@ -33,7 +33,7 @@
   height: 100%;
   background: #333;
   color: white;
-  padding: 2rem;
+  padding: 2rem 0rem 1rem 1rem;
   transition: right 0.3s ease-in-out;
 }
 
@@ -62,7 +62,6 @@
 }
 
 .mobile-nav-links a {
-  display: block;
   padding: 12px 20px;
   text-decoration: none;
   color: white; /* Default text color */
@@ -82,4 +81,9 @@
   font-weight: 600;
   background-color: rgba(0, 188, 212, 0.15);
   border-left: 4px solid #00bcd4;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
