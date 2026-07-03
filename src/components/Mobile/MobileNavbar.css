@@ -52,6 +52,34 @@
 }
 
 .mobile-nav-links {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-links li {
+  list-style: none;
+}
+
+.mobile-nav-links a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white; /* Default text color */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.mobile-nav-links a:hover {
+  color: #00bcd4;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Active page */
+.mobile-nav-links a.active {
+  color: #00bcd4;
+  font-weight: 600;
+  background-color: rgba(0, 188, 212, 0.15);
+  border-left: 4px solid #00bcd4;
 }

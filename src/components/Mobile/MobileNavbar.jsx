@@ -1,6 +1,7 @@
 import "./MobileNavbar.css";
 import { useNavbar } from "../../context/NavbarContext";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 
 function MobileNavbar() {
   const [showNavbar, setShowNavbar] = useNavbar();
@@ -22,22 +23,57 @@ function MobileNavbar() {
       </nav>
       <div className={`slide-in ${showNavbar ? "open" : ""}`}>
         <ul className="mobile-nav-links">
-          <a href="/portfolio/" onClick={() => setShowNavbar(false)}>
-            <li>Home</li>
-          </a>
-          <a href="/portfolio/about" onClick={() => setShowNavbar(false)}>
-            <li>About</li>
-          </a>
-          <a href="/portfolio/projects" onClick={() => setShowNavbar(false)}>
-            <li>Projects</li>
-          </a>
-          <a href="/portfolio/skills" onClick={() => setShowNavbar(false)}>
-            <li>Skills</li>
-          </a>
-          <a href="/portfolio/contact" onClick={() => setShowNavbar(false)}>
-            <li>Contact</li>
-          </a>
-        </ul>
+  <li>
+    <NavLink
+      to="/"
+      className={({ isActive }) => (isActive ? "active" : "")}
+      onClick={() => setShowNavbar(false)}
+      end
+    >
+      Home
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/about"
+      className={({ isActive }) => (isActive ? "active" : "")}
+      onClick={() => setShowNavbar(false)}
+    >
+      About
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/projects"
+      className={({ isActive }) => (isActive ? "active" : "")}
+      onClick={() => setShowNavbar(false)}
+    >
+      Projects
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/skills"
+      className={({ isActive }) => (isActive ? "active" : "")}
+      onClick={() => setShowNavbar(false)}
+    >
+      Skills
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/contact"
+      className={({ isActive }) => (isActive ? "active" : "")}
+      onClick={() => setShowNavbar(false)}
+    >
+      Contact
+    </NavLink>
+  </li>
+</ul>
       </div>
     </>
   );
