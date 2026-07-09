@@ -1,29 +1,29 @@
 import "./Navbar.css";
 import { FaDownload } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <a href="/portfolio/">
+        <NavLink to="/">
           <h1 className="logo">My Portfolio</h1>
-        </a>
+        </NavLink>
       </div>
       <div className="right_section">
         <div className="links">
           <ul className="navbar__links">
             <li>
-              <a href="/portfolio/about">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a href="/portfolio/projects">Projects</a>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
-              <a href="/portfolio/skills">Skills</a>
+              <NavLink to="/skills">Skills</NavLink>
             </li>
-
             <li>
-              <a href="/portfolio/contact">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
